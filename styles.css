@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.box {
+    box-sizing: content-box;
+    margin: 140px auto;
+    background-color: rgba(145, 124, 8);
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+header {
+    box-sizing: content-box;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    top: 0;
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
+
+#nav-bar {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 20px;
+    color: #fff;
+}
+
+@media (max-width: 480px) {
+    #nav-bar {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.nav-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 60%;
+}
+
+.nav-left li {
+    font-size: 25px;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 40%;
+}
+
+@media (max-width: 480px) {
+    .nav-rigth {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+nav li {
+    float: left;
+    font-size: 16px;
+}
+
+nav li a {
+    justify-content: flex-end;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav li h1 {
+    display: flex;
+    justify-content: flex-start;
+    color: #fff;
+    align-items: center;
+}
+
+.flex-father {
+    display: flex;
+    background-color: rgba(145, 124, 8, 0.753);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 480px) {
+    .flex-father {}
+}
+
+#email {
+    font-size: 24px;
+    height: 30px;
+    padding: 5px;
+}
+
+@media screen and (max-width:360px) {
+    #email {
+        width: 360px;
+    }
+}
+
+#form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+@media screen and (max-width:480px) {
+    #form {
+        flex-direction: column;
+        width: 360px;
+        size: 10em;
+    }
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    height: 36px;
+}
+
+#header-img {}
+
+.flex-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 70px;
+    width: 100%;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+@media screen and (max-width: 480px) {
+    #video {
+        height: auto;
+    }
+}
+
+#foot {
+    display: flex;
+    flex-direction: row;
+}
+
+#foot-text {
+    justify-content: flex-end;
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 480px) {
+    p {
+        font-size: 1rem;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+#align-vert {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    font-size: 20px;
+    text-align: right;
+}
+
+
+/* FEATURES*/
+
+.flex-feature {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .flex-feature {
+        width: auto;
+    }
+}
+
+.flex-feature1 {
+    background-color: rgba(145, 124, 8, 0.753);
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    line-height: 85%;
+}
+
+.flex-feature2 {
+    background-color: rgba(145, 124, 8, 0.753);
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    line-height: 85%;
+}
+
+.flex-feature3 {
+    background-color: rgba(145, 124, 8, 0.753);
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    line-height: 85%;
+}
+
+
+/*PRICES*/
+
+#flex-container {
+    display: flex;
+    /* background-color: grey; */
+    justify-content: space-around;
+    align-items: center;
+    line-height: 60%;
+    flex-direction: row;
+    border-color: black;
+}
+
+.flex-item1 {
+    background-color: rgba(145, 124, 8, 0.753);
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    margin: 10px;
+    border: 1px solid #000;
+}
+
+.flex-item2 {
+    background-color: rgba(145, 124, 8, 0.753);
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    order: -1;
+    margin: 10px;
+    border: 1px solid #000;
+}
